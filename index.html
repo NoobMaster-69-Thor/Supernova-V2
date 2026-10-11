@@ -52,6 +52,7 @@
         .game-card img {
             width: 100%;
             height: 160px;
+            object-fit: cover;
             border-radius: 10px 10px 0 0;
         }
         .game-card h3 {
@@ -90,29 +91,28 @@
 <body>
     <header>
         <button onclick="location.href='index.html'">Games</button>
-        <button onclick="location.href='apps.html'">Apps</button>
     </header>
     <div class="section">
         <h2>Games</h2> <!-- change this to what you want above ur games -->
         <div class="game-card" onclick="openFullscreen('https://krunker.io/')"> 
-            <img src="https://via.placeholder.com/200x160" alt="Krunker.io">
+            <img src="images/krunker.png" style="object-fit: contain;" alt="Krunker.io">
             <h3>Krunker.io</h3>
         </div>
-        <div class="game-card" onclick="openFullscreen('https://agar.io/')">
-            <img src="https://via.placeholder.com/200x160" alt="Agar.io">
-            <h3>Agar.io</h3>
-        </div>
-        <div class="game-card" onclick="openFullscreen('https://slither.io/')">
-            <img src="https://via.placeholder.com/200x160" alt="Slither.io">
-            <h3>Slither.io</h3>
+        <div class="game-card" onclick="openFullscreen('https://ragdollarchersonline.io/play/ragdoll-archers/')">
+            <img src="images/ragdollarchers.jpg" alt="Ragdoll Archers">
+            <h3>Ragdoll Archers</h3>
         </div>
         <div class="game-card" onclick="openFullscreen('https://shellshock.io/')">
-            <img src="https://via.placeholder.com/200x160" alt="Shell Shockers">
+            <img src="images/shellshockers.webp" alt="Shell Shockers">
             <h3>Shell Shockers</h3>
         </div>
         <div class="game-card" onclick="openFullscreen('https://diep.io/')">
-            <img src="https://via.placeholder.com/200x160" alt="Diep.io">
+            <img src="images/diepio.webp" style="object-fit: contain;" alt="Diep.io">
             <h3>Diep.io</h3>
+        </div>
+        <div class="game-card" onclick="openFullscreen('https://sussygamedeveloper.github.io/FNAF1/')">
+            <img src="images/fnaf1.jpg" alt="FNAF 1">
+            <h3>FNAF 1</h3>
             <!-- copy one of these to add new games, change link to wanted game, and img to a links favicon (icon on the tab) the alt will just show the text if img doesnt work (change the text to work as well) -->
         </div>
     </div>
